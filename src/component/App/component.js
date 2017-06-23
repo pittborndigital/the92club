@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <AppContainer>
         <Title>Hello World {woo}</Title>
+        <div>woo</div>
       </AppContainer>
     )
   }
