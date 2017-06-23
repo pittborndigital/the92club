@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import App from './component/App'
+import SceneManager from './component/Scenes/SceneManager'
 import createStore from './store/createStore'
 import registerServiceWorker from './module/registerServiceWorker'
 
@@ -10,7 +10,7 @@ const store = createStore()
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <SceneManager />
   </Provider>,
   document.getElementById('root'),
 )

@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { NOT_FOUND } from 'redux-first-router'
 import { ACTION_HOME, ACTION_404 } from '../../../store/routesMap'
 
-import SceneHome from '../Home'
+import MyProgress from '../../../component/MyProgress'
 import Scene404 from '../404'
 
 const getSceneForRoute = (type) => {
   switch (type) {
     case ACTION_HOME:
-      return <SceneHome />
+      return <MyProgress />
 
     case NOT_FOUND:
     case ACTION_404:

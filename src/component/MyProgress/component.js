@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { AppContainer, Title } from './styled'
-import SceneManager from '../Scenes/SceneManager'
 
 class App extends Component {
   render() {
@@ -9,7 +8,6 @@ class App extends Component {
     return (
       <AppContainer>
         <Title>Hello World {woo}</Title>
-        <SceneManager />
       </AppContainer>
     )
   }
