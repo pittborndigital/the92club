@@ -6,6 +6,8 @@ node_js:
 sudo: false
 addons:
   apt:
+    sources:
+      - google-chrome
     packages:
       - default-jre
       - default-jdk
