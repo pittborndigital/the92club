@@ -9,6 +9,7 @@ before_script:
 script:
   - nvm install stable
   - nvm use stable
+  - npm install -g yarn
   - yarn
   - npm run build && npm run launch-build &
   - npm run e2e
