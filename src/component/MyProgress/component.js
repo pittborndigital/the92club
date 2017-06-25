@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import { AppContainer, Title } from './styled'
+import { Container, Title } from './styled'
 
-class App extends Component {
+class MyProgress extends Component {
   render() {
     const boo = 'woo'
     const woo = `yeah: ${boo}`
     return (
-      <AppContainer>
+      <Container>
         <Title>Hello World {woo}</Title>
-      </AppContainer>
+      </Container>
     )
   }
 }
 
-export default App
+MyProgress.displayName = 'MyProgress'
+
+export default MyProgress
