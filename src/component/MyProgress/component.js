@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
-import { Container, Title } from './styled'
+import { Container, Title, SubTitle } from './styled'
+
+import Achievement from 'component/Achievement'
 
 class MyProgress extends Component {
   render() {
-    const boo = 'woo'
-    const woo = `yeah: ${boo}`
     return (
       <Container>
-        <Title>Hello World {woo}</Title>
+        <Title>My Progress</Title>
+        <SubTitle>Premiership</SubTitle>
+        <Achievement goal={38} achieved={38} />
+        <SubTitle>Championship</SubTitle>
+        <Achievement goal={42} achieved={12} />
       </Container>
     )
   }
