@@ -5,7 +5,7 @@
 
 # testing
 /coverage
-/e2e-reports
+/e2e-tests/_reports
 
 # production
 /build
