@@ -30,12 +30,14 @@
     "nightwatch": "^0.9.16",
     "nightwatch-html-reporter": "^2.0.2",
     "prettier-eslint-cli": "^4.1.1",
+    "pushstate-server": "^3.0.0",
     "react-scripts": "1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "npm run build && firebase deploy",
+    "launch-build": "pushstate-server build 3000",
     "test": "react-scripts test --env=jsdom",
     "format": "prettier-eslint \"src/**/*.js\" --write",
     "e2e": "nightwatch --env default && npm run format-e2e-reports",

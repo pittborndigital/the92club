@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "node"
+  - "7"
+sudo: false
+os:
+  - linux
+  - osx
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+script:
+  - yarn
+  - npm run build && npm run launch-build &
+  - npm run e2e
