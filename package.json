@@ -27,6 +27,8 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "nightwatch": "^0.9.16",
+    "nightwatch-html-reporter": "^2.0.2",
     "prettier-eslint-cli": "^4.1.1",
     "react-scripts": "1.0.7"
   },
@@ -35,7 +37,9 @@
     "build": "react-scripts build",
     "deploy": "npm run build && firebase deploy",
     "test": "react-scripts test --env=jsdom",
-    "format": "prettier-eslint \"src/**/*.js\" --write"
+    "format": "prettier-eslint \"src/**/*.js\" --write",
+    "e2e": "nightwatch --env default && npm run format-e2e-reports",
+    "format-e2e-reports": "nightwatch-html-reporter -d e2e-reports/"
   },
   "license": "MIT"
 }
