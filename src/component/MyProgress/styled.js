@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { colors, breakpoints } from 'config'
 
-export const AppContainer = styled.div`
+export const Container = styled.div`
   background-color: ${colors.primary};
 `
 

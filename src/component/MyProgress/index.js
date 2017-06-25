@@ -1,3 +1,3 @@
-import App from './component'
+import MyProgress from './component'
 
-export default App
+export default MyProgress
