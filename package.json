@@ -39,7 +39,7 @@
     "test": "react-scripts test --env=jsdom",
     "format": "prettier-eslint \"src/**/*.js\" --write",
     "e2e": "nightwatch --env default && npm run format-e2e-reports",
-    "format-e2e-reports": "nightwatch-html-reporter -d e2e-reports/"
+    "format-e2e-reports": "nightwatch-html-reporter -d e2e-tests/_reports/"
   },
   "license": "MIT"
 }
