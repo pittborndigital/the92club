@@ -1,6 +1,4 @@
-language: node_js
-node_js:
-  - "node"
+language: java
 sudo: false
 os:
   - linux
@@ -9,6 +7,8 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
 script:
+  - nvm install stable
+  - nvm use stable
   - yarn
   - npm run build && npm run launch-build &
   - npm run e2e
