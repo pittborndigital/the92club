@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pittborndigital/the92club.svg?branch=master)](https://travis-ci.org/pittborndigital/the92club)
+
 # the92club
 The 92 club web app
 

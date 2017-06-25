@@ -14,5 +14,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
 script:
   - yarn
-  - npm run build && npm run launch-build &
+  - npm run build
+  - npm run launch-build &
+  - sleep 1 # give the web server time to start
   - npm run e2e
