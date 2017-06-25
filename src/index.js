@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import SceneManager from './component/Scenes/SceneManager'
-import createStore from './store/createStore'
-import registerServiceWorker from './module/registerServiceWorker'
+import SceneManager from 'component/Scenes/SceneManager'
+import createStore from 'store/createStore'
+import registerServiceWorker from 'module/registerServiceWorker'
 
 const store = createStore()
 
