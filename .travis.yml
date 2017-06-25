@@ -19,4 +19,5 @@ script:
   - npm run build
   - npm run launch-build &
   - sleep 1 # give the web server time to start
+  - curl http://localhost:3000 # check that we can reach the web server
   - npm run e2e
