@@ -15,7 +15,6 @@ addons:
       - google-chrome-stable
 env:
   - JAVA_HOME="/usr/lib/jvm/java-8-oracle"
-  - CI=1
 before_script:
   - jdk_switcher use oraclejdk8
   - "export DISPLAY=:99.0"
