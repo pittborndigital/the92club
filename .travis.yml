@@ -15,6 +15,7 @@ addons:
       - google-chrome-stable
 env:
   - JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+  - CI=1
 before_script:
   - jdk_switcher use oraclejdk8
   - "export DISPLAY=:99.0"
@@ -24,6 +25,11 @@ before_script:
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
 script:
   - yarn
+
+  # unit tests
+  - npm run test
+
+  # e2e tests
   - npm run build
   - npm run launch-build &
   - sleep 1 # give the web server time to start
