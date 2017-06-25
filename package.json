@@ -22,11 +22,13 @@
     "styled-components": "^2.1.0"
   },
   "devDependencies": {
+    "chromedriver": "^2.30.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "geckodriver": "^1.7.1",
     "nightwatch": "^0.9.16",
     "nightwatch-html-reporter": "^2.0.2",
     "prettier-eslint-cli": "^4.1.1",
