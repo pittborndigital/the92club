@@ -13,7 +13,7 @@ class Achievement extends Component {
     const progressPercent = calculateProgressPercent({ goal, achieved })
     return (
       <Container>
-        <ProgressDisplay>{goal} / {achieved} [{progressPercent}%]</ProgressDisplay>
+        <ProgressDisplay>{achieved} / {goal} [{progressPercent}%]</ProgressDisplay>
       </Container>
     )
   }
