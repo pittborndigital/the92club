@@ -4,7 +4,7 @@ module.exports = {
       .url(client.launch_url)
       .waitForElementVisible('body', 1000)
       .waitForElementVisible('#root', 1000)
-      .assert.containsText('#root', 'Hello World')
+      .assert.containsText('#root', 'My Progress')
       .end()
   },
   'Catch bad routes with 404 page': (client) => {
