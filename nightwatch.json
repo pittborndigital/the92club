@@ -10,6 +10,7 @@
     "start_process" : true,
     "server_path" : "./bin/selenium-server-standalone-3.4.0.jar",
     "log_path" : "e2e-tests/",
+    "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
       "webdriver.chrome.driver" : "./bin/chromedriver"
