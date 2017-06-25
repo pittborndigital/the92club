@@ -3,6 +3,7 @@ module.exports = {
     client
       .url(client.launch_url)
       .waitForElementVisible('body', 1000)
+      .waitForElementVisible('#root', 1000)
       .assert.containsText('#root', 'Hello World')
       .end()
   },
@@ -10,6 +11,7 @@ module.exports = {
     client
       .url(`${client.launch_url}/${(Math.random() * 1000).toString()}`)
       .waitForElementVisible('body', 1000)
+      .waitForElementVisible('#root', 1000)
       .assert.containsText('#root', 'Page not found')
       .end()
   },

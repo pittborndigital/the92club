@@ -22,24 +22,29 @@
     "styled-components": "^2.1.0"
   },
   "devDependencies": {
+    "chromedriver": "^2.30.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "geckodriver": "^1.7.1",
     "nightwatch": "^0.9.16",
     "nightwatch-html-reporter": "^2.0.2",
     "prettier-eslint-cli": "^4.1.1",
+    "pushstate-server": "^3.0.0",
     "react-scripts": "1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "npm run build && firebase deploy",
+    "launch-build": "pushstate-server build 3000",
+    "kill-background": "pkill -f \"pushstate-server build 3000\"",
     "test": "react-scripts test --env=jsdom",
     "format": "prettier-eslint \"src/**/*.js\" --write",
-    "e2e": "nightwatch --env default && npm run format-e2e-reports",
-    "format-e2e-reports": "nightwatch-html-reporter -d e2e-tests/_reports/"
+    "e2e": "nightwatch --env firefox,chrome",
+    "format-e2e-reports": "nightwatch-html-reporter -d e2e-tests/_reports"
   },
   "license": "MIT"
 }
