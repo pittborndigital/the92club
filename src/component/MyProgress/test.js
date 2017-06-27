@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { shallow } from 'enzyme'
 
 import MyProgress from './component'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<MyProgress />, div)
+  const wrapper = shallow(<MyProgress />)
+  expect(wrapper.exists()).toBe(true)
 })

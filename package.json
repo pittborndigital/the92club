@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "chromedriver": "^2.30.1",
+    "enzyme": "^2.9.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.6.0",
@@ -33,7 +34,8 @@
     "nightwatch-html-reporter": "^2.0.2",
     "prettier-eslint-cli": "^4.1.1",
     "pushstate-server": "^3.0.0",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
