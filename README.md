@@ -12,6 +12,23 @@ The e2e tests run using [NightwatchJS](http://nightwatchjs.org/), and Selenium S
 1. Install Java SDK (at least v7)
   >http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
+### Scaffolding
+
+The scaffolding is done via [Yeoman](http://yeoman.io/), which relies on the generator modules being in your global NPM modules. In order to add this generator to your global node modules, run the following commands:
+
+```bash
+cd scaffolding/generator-the-92-club
+npm link
+```
+
+Then to use the generator, you can run the following command from the root of the project:
+
+```bash
+yo the-92-club:component
+```
+
+This will prompt you for the relevant variables, and generate a new component in the src/component directory.
+
 ## Tech Stack
 
 
