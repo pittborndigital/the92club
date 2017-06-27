@@ -43,6 +43,12 @@ This will prompt you for the relevant variables, and generate a new component in
 | ------ | --------------- | ----------------- | --------------- |
 | styled-components | ^2.1.0 | All app and component CSS is delivered through styled components. As a convention we give the styled components a displayName ***'ParentComponent.StyledComponent'*** to make debugging the CSS through React dev tools much simpler. <br><br>NOTE: use the atom plugin 'language-babel' to get auto complete working for the CSS in a styled-component file | [Github ](https://github.com/styled-components/styled-components) <br/>[Docs ](https://www.styled-components.com/docs) <br/>[Atom plugin - language-babel](https://atom.io/packages/language-babel) |
 | enzyme | ^2.9.1 | Unit tests with enzyme | [Docs](http://airbnb.io/enzyme/docs/api/index.html) |
+| @storybook/react | ^3.1.6 | Storybook sample components | [Docs](https://storybook.js.org/) |
+
+
+### Using Storybook
+
+In order to create a new story, add a story.js file to a component directory, and then require this file in .storybook/stories.js.
 
 ## License
 
