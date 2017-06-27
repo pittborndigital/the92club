@@ -1,7 +1,9 @@
 [![Build Status](https://travis-ci.org/pittborndigital/the92club.svg?branch=master)](https://travis-ci.org/pittborndigital/the92club)
 
 # the92club
-The 92 club web app
+The 92 club web app.
+
+This project was bootstrapped using [Create React App](./README_CRA.md)
 
 ## e2e tests
 The e2e tests run using [NightwatchJS](http://nightwatchjs.org/), and Selenium Server. Selenium Server runs as a Java process, and therefore has some dependencies outside of this project.
