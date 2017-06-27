@@ -32,6 +32,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
     "geckodriver": "^1.7.1",
+    "gh-pages": "^1.0.0",
     "nightwatch": "^0.9.16",
     "nightwatch-html-reporter": "^2.0.2",
     "prettier-eslint-cli": "^4.1.1",
@@ -51,7 +52,8 @@
     "e2e": "nightwatch --env firefox,chrome",
     "format-e2e-reports": "nightwatch-html-reporter -d e2e-tests/_reports",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "license": "MIT"
 }
