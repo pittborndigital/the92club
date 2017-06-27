@@ -3,6 +3,7 @@ import Link from 'redux-first-router-link'
 
 import { ACTION_LEAGUE } from 'store/routesMap'
 import Achievement from 'component/Achievement'
+import ProgressDonut from 'component/ProgressDonut'
 import { Container, Title, SubTitle } from './styled'
 
 class MyProgress extends Component {
@@ -10,6 +11,8 @@ class MyProgress extends Component {
     return (
       <Container>
         <Title>My Progress</Title>
+
+        <ProgressDonut achieved={48} goal={92} baseTitle="Grounds" />
 
         <SubTitle>
           <Link href={{ type: ACTION_LEAGUE, payload: { leagueId: 'premiership' } }}>
