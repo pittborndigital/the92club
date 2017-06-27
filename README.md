@@ -14,17 +14,24 @@ The e2e tests run using [NightwatchJS](http://nightwatchjs.org/), and Selenium S
 
 ### Scaffolding
 
-The scaffolding is done via [Yeoman](http://yeoman.io/), which relies on the generator modules being in your global NPM modules. In order to add this generator to your global node modules, run the following commands:
+
+The scaffolding is done via [Yeoman](http://yeoman.io/), which relies on a global installation of Yeoman and the generator modules being in your global NPM modules.
 
 ```bash
-cd scaffolding/generator-the-92-club
-npm link
+$ npm install -g yeoman
+```
+
+In order to add this generator to your global node modules, run the following commands:
+
+```bash
+$ cd scaffolding/generator-the-92-club
+$ npm link
 ```
 
 Then to use the generator, you can run the following command from the root of the project:
 
 ```bash
-yo the-92-club:component
+$ yo the-92-club:component
 ```
 
 This will prompt you for the relevant variables, and generate a new component in the src/component directory.
