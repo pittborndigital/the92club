@@ -1,9 +1,11 @@
+// @flow
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { Container, ProgressDisplay } from './styled'
 
-function calculateProgressPercent({ goal, achieved }) {
+function calculateProgressPercent({ goal: number, achieved: number }) {
+  // function calculateProgressPercent(goal: number, achieved: number) {
   return Math.round(achieved / goal * 100)
 }
 
@@ -11,9 +13,12 @@ class Achievement extends Component {
   render() {
     const { goal, achieved } = this.props
     const progressPercent = calculateProgressPercent({ goal, achieved })
+    const breakProgressPercent = calculateProgressPercent({ goal, achieved: 'grr' })
     return (
       <Container>
-        <ProgressDisplay>{goal} / {achieved} [{progressPercent}%]</ProgressDisplay>
+        <ProgressDisplay>
+          {goal} / {achieved} [{progressPercent}%] [{breakProgressPercent}]
+        </ProgressDisplay>
       </Container>
     )
   }
