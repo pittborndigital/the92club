@@ -1,0 +1,9 @@
+{
+  "short_name": "92club",
+  "name": "The 92 Club",
+  "icons": [],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
