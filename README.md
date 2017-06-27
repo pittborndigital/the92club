@@ -50,9 +50,7 @@ This will prompt you for the relevant variables, and generate a new component in
 
 In order to create a new story, add a story.js file to a component directory, and then require this file in .storybook/stories.js.
 
-The latest storybook is deployed to [Github Pages](https://pittborndigital.github.io/the92club/) when builds on the master branch are successful.
-
-Alternatively, the storybook can be deployed manually by running:
+The storybook can be deployed to [Github Pages](https://pittborndigital.github.io/the92club/) by running:
 
 ```bash
 npm run deploy-storybook

@@ -43,8 +43,3 @@ script:
   - npm run e2e
   - npm run format-e2e-reports -- -b false
   - npm run kill-background
-
-after_success: |
-  if [ "$TRAVIS_BRANCH" == "master" ]; then
-    npm run deploy-storybook
-  fi
