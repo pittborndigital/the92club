@@ -1,17 +1,30 @@
 import React, { Component } from 'react'
-import { Container, Title, SubTitle } from './styled'
+import Link from 'redux-first-router-link'
 
+import { ACTION_LEAGUE } from 'store/routesMap'
 import Achievement from 'component/Achievement'
+import { Container, Title, SubTitle } from './styled'
 
 class MyProgress extends Component {
   render() {
     return (
       <Container>
         <Title>My Progress</Title>
-        <SubTitle>Premiership</SubTitle>
+
+        <SubTitle>
+          <Link href={{ type: ACTION_LEAGUE, payload: { leagueId: 'premiership' } }}>
+            Premiership
+          </Link>
+        </SubTitle>
         <Achievement goal={38} achieved={38} />
-        <SubTitle>Championship</SubTitle>
+
+        <SubTitle>
+          <Link href={{ type: ACTION_LEAGUE, payload: { leagueId: 'championship' } }}>
+            Championship
+          </Link>
+        </SubTitle>
         <Achievement goal={42} achieved={12} />
+
       </Container>
     )
   }
