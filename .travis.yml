@@ -33,7 +33,7 @@ script:
   - yarn
 
   # unit tests
-  - npm run test
+  - npm run coverage
 
   # e2e tests
   - npm run build
