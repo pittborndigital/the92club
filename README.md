@@ -1,6 +1,7 @@
 # the92club
 
 [![Build Status](https://travis-ci.org/pittborndigital/the92club.svg?branch=master)](https://travis-ci.org/pittborndigital/the92club)
+[![Coverage Status](https://coveralls.io/repos/github/pittborndigital/the92club/badge.svg?branch=master)](https://coveralls.io/github/pittborndigital/the92club?branch=master)
 
 The 92 club web app. This project was bootstrapped using [Create React App](./README_CRA.md)
 
