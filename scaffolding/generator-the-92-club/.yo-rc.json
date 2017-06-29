@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Christopher Pitt",
+      "authorEmail": "c.james.pitt@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
