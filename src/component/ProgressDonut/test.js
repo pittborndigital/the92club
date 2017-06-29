@@ -1,9 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import renderer from 'react-test-renderer'
 
 import ProgressDonut from './component'
 
-it('Achievement renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<ProgressDonut goal={38} achieved={64} />, div)
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<ProgressDonut goal={38} achieved={64} goalTitle="Donuts Eaten" />)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
 })

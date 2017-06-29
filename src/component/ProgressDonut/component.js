@@ -126,7 +126,7 @@ class ProgressDonut extends Component {
   }
 
   render() {
-    const { baseTitle, goal, width, height, baseColor, resultsColor, strokeWidth } = this.props
+    const { goalTitle, goal, width, height, baseColor, resultsColor, strokeWidth } = this.props
     const { percentageFiltered, achievedDisplay } = this.state
     const base = describeArc(150, 150, 100, 0, 360 - 0.0001)
     const arcDegrees = percentageFiltered === 0 ? 360 - 0.0001 : 360 * (percentageFiltered / 100)
@@ -154,7 +154,7 @@ class ProgressDonut extends Component {
             <AchievedCount>{achievedDisplay}</AchievedCount>
             <GoalOf>of</GoalOf>
             <GoalCount>{goal}</GoalCount>
-            <GoalTitle>{baseTitle}</GoalTitle>
+            <GoalTitle>{goalTitle}</GoalTitle>
           </Info>
         </InfoContainer>
       </Container>
@@ -164,13 +164,8 @@ class ProgressDonut extends Component {
 
 ProgressDonut.displayName = 'ProgressDonut'
 
-// ProgressDonut.propTypes = {
-//   goal: PropTypes.number.isRequired,
-//   achieved: PropTypes.number.isRequired,
-// }
-
 ProgressDonut.propTypes = {
-  baseTitle: PropTypes.string.isRequired,
+  goalTitle: PropTypes.string.isRequired,
   goal: PropTypes.number.isRequired,
   achieved: PropTypes.number.isRequired,
   strokeWidth: PropTypes.number,

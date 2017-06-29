@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa kNeXYG"
+  height={150}
+  width={150}
+>
+  <svg
+    className="results-donut"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "height": 150,
+        "justifyContent": "center",
+        "position": "absolute",
+        "width": 150,
+      }
+    }
+    viewBox="42 42 216 216"
+  >
+    <path
+      d="M 149.9998254670748 50.00000000015231 A 100 100 0 1 0 150 50"
+      fill="none"
+      stroke="#BBB"
+      strokeWidth={15}
+    />
+  </svg>
+  <div
+    className="sc-bwzfXH gBPZuy"
+    height={150}
+    width={150}
+  >
+    <div
+      className="sc-htpNat dEQUjC"
+    >
+      <div
+        className="sc-bxivhb kpjUiq"
+      >
+        0
+      </div>
+      <div
+        className="sc-EHOje hUWbrG"
+      >
+        of
+      </div>
+      <div
+        className="sc-ifAKCX cjzFD"
+      >
+        38
+      </div>
+      <div
+        className="sc-bZQynM bQGae"
+      >
+        Donuts Eaten
+      </div>
+    </div>
+  </div>
+</div>
+`;
