@@ -130,7 +130,12 @@ class ProgressDonut extends Component {
     const { percentageFiltered, achievedDisplay } = this.state
     const base = describeArc(150, 150, 100, 0, 360 - 0.0001)
     const arcDegrees = percentageFiltered === 0 ? 360 - 0.0001 : 360 * (percentageFiltered / 100)
-    const arc = describeArc(150, 150, 100, 0, arcDegrees)
+    let arc
+    if (arcDegrees === 360) {
+      arc = describeArc(150, 150, 100, 0, 360 - 0.0001)
+    } else {
+      arc = describeArc(150, 150, 100, 0, arcDegrees)
+    }
     const widgetStyles = {
       width,
       height,
@@ -143,11 +148,11 @@ class ProgressDonut extends Component {
     return (
       <Container width={width} height={height}>
         <svg className="results-donut" viewBox="42 42 216 216" style={widgetStyles}>
-          <path d={base} fill="none" stroke={resultsColor} strokeWidth={strokeWidth} />
+          <path d={base} fill="none" stroke={baseColor} strokeWidth={strokeWidth} />
         </svg>
         {percentageFiltered > 0 &&
           <svg className="results-donut" viewBox="42 42 216 216" style={widgetStyles}>
-            <path d={arc} fill="none" stroke={baseColor} strokeWidth={strokeWidth} />
+            <path d={arc} fill="none" stroke={resultsColor} strokeWidth={strokeWidth} />
           </svg>}
         <InfoContainer width={width} height={height}>
           <Info>
@@ -164,11 +169,6 @@ class ProgressDonut extends Component {
 
 ProgressDonut.displayName = 'ProgressDonut'
 
-// ProgressDonut.propTypes = {
-//   goal: PropTypes.number.isRequired,
-//   achieved: PropTypes.number.isRequired,
-// }
-
 ProgressDonut.propTypes = {
   baseTitle: PropTypes.string.isRequired,
   goal: PropTypes.number.isRequired,
@@ -184,8 +184,8 @@ ProgressDonut.defaultProps = {
   strokeWidth: 15,
   width: 150,
   height: 150,
-  resultsColor: '#BBB',
-  baseColor: '#01E400',
+  resultsColor: '#01E400',
+  baseColor: '#BBB',
 }
 
 export default ProgressDonut
