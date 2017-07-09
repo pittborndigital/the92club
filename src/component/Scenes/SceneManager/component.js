@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { NOT_FOUND } from 'redux-first-router'
 
 import { ACTION_HOME, ACTION_LEAGUE, ACTION_404 } from 'store/routesMap'
 
 import MyProgress from 'component/MyProgress'
 import League from 'component/League'
+import PageWrapper from 'component/PageWrapper'
 import Scene404 from '../404'
 
 const getSceneForRoute = (type) => {
@@ -27,8 +29,18 @@ const getSceneForRoute = (type) => {
 class SceneManager extends Component {
   render() {
     const { location } = this.props
-    return getSceneForRoute(location.type)
+    return (
+      <PageWrapper>
+        {getSceneForRoute(location.type)}
+      </PageWrapper>
+    )
   }
+}
+
+SceneManager.propTypes = {
+  location: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+  }).isRequred,
 }
 
 export default SceneManager

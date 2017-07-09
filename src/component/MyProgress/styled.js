@@ -6,6 +6,7 @@ export const Container = styled.div`
 Container.displayName = 'MyProgress.Container'
 
 export const Title = styled.h1`
+  margin: 0px;
   color: ${colors.secondary};
   @media (min-width: ${breakpoints.small}) {
     color: green;
