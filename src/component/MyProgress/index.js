@@ -1,3 +1,3 @@
-import MyProgress from './component'
+import MyProgress from './container'
 
 export default MyProgress

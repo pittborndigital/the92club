@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import createHistory from 'history/createBrowserHistory'
 import { connectRoutes } from 'redux-first-router'
 
-import * as reducers from './reducers'
+import reducers from './reducers'
 import routesMap from './routesMap'
 
 /* eslint-disable no-underscore-dangle */
