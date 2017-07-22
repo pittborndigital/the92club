@@ -1,6 +1,6 @@
 export const colors = {
   primary: 'red',
-  secondary: 'blue',
+  secondary: '#3f94c7',
 }
 
 export const breakpoints = {
