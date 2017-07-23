@@ -11,6 +11,9 @@
 /build
 /storybook-static
 
+# mockups
+/mockups/public
+
 # misc
 .DS_Store
 .env.local
