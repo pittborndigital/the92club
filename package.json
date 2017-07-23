@@ -13,6 +13,7 @@
   "private": true,
   "dependencies": {
     "history": "^4.6.3",
+    "patternlab-node-cli": "pattern-lab/patternlab-node-cli",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -55,7 +56,9 @@
     "format-e2e-reports": "nightwatch-html-reporter -d e2e-tests/_reports",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
+    "patternlab:build": "patternlab build --config ./mockups/patternlab-config.json",
+    "patternlab:serve": "patternlab serve --config ./mockups/patternlab-config.json"
   },
   "license": "MIT"
 }
