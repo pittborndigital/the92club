@@ -637,6 +637,8 @@
 }
 
 .sg-pattern-category-title a {
+  color: #808080;
+  text-decoration: none;
   -webkit-transition: color .1s ease-out;
   transition: color .1s ease-out;
 }
