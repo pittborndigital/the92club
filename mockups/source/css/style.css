@@ -16,3 +16,14 @@
 .league-icon img {
   width: 60px;
 }
+
+.progress {
+  background: #edecec;
+}
+
+.progress .progress-bar {
+  height: 16px;
+  background: #5a995a;
+  transition: 0.4s linear;
+  transition-property: width;
+}
