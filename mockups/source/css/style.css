@@ -8,3 +8,11 @@
 .text-btn {
   color: red;
 }
+
+.club-badge img {
+  width: 30px;
+}
+
+.league-icon img {
+  width: 60px;
+}

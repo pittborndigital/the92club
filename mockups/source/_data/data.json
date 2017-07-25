@@ -3,5 +3,17 @@
   "year": "2017",
   "company" : {
     "name": "Pitt Born Digital"
+  },
+  "club" : {
+    "badge": {
+      "title": "Tottenham Hotspur",
+      "src": "../../images/club-badges/Tottenham_Hotspur.png"
+    }
+  },
+  "league" : {
+    "icon": {
+      "title": "Premier League",
+      "src": "../../images/league-icons/Premier_League.png"
+    }
   }
 }
