@@ -13,6 +13,8 @@
 
 # mockups
 /mockups/public
+/mockups/source/_patterns/**/*.css
+/mockups/source/css/style.css
 
 # misc
 .DS_Store

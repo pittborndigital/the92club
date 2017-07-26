@@ -14,7 +14,6 @@
   "dependencies": {
     "edition-node": "^0.0.4",
     "history": "^4.6.3",
-    "npm-watch": "^0.2.0",
     "patternlab-node-cli": "pattern-lab/patternlab-node-cli",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -37,18 +36,23 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "fs-finder": "^1.8.1",
     "geckodriver": "^1.7.1",
     "gh-pages": "^1.0.0",
     "nightwatch": "^0.9.16",
     "nightwatch-html-reporter": "^2.0.2",
+    "npm-watch": "^0.2.0",
     "prettier-eslint-cli": "^4.1.1",
     "pushstate-server": "^3.0.0",
     "react-scripts": "1.0.7",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^15.6.1",
+    "stylus": "^0.54.5"
   },
   "watch": {
     "patternlab:build": {
-      "patterns": ["mockups/source"],
+      "patterns": [
+        "mockups/source"
+      ],
       "extensions": "*"
     }
   },
@@ -67,8 +71,9 @@
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
     "patternlab": "npm run watch & npm run patternlab:serve",
-    "patternlab:build": "rm -rf mockups/public && patternlab build --config ./mockups/patternlab-config.json",
+    "patternlab:build": "rm -rf mockups/public && npm run patternlab:css && patternlab build --config ./mockups/patternlab-config.json",
     "patternlab:serve": "patternlab serve --config ./mockups/patternlab-config.json",
+    "patternlab:css": "node scripts/compileMockupCss.js",
     "watch": "npm-watch"
   },
   "license": "MIT"
