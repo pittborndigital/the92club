@@ -14,6 +14,7 @@
   "dependencies": {
     "edition-node": "^0.0.4",
     "history": "^4.6.3",
+    "npm-watch": "^0.2.0",
     "patternlab-node-cli": "pattern-lab/patternlab-node-cli",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -45,6 +46,12 @@
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1"
   },
+  "watch": {
+    "patternlab:build": {
+      "patterns": ["mockups/source"],
+      "extensions": "*"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -59,8 +66,10 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
-    "patternlab:build": "patternlab build --config ./mockups/patternlab-config.json",
-    "patternlab:serve": "patternlab serve --config ./mockups/patternlab-config.json"
+    "patternlab": "npm run watch & npm run patternlab:serve",
+    "patternlab:build": "rm -rf mockups/public && patternlab build --config ./mockups/patternlab-config.json",
+    "patternlab:serve": "patternlab serve --config ./mockups/patternlab-config.json",
+    "watch": "npm-watch"
   },
   "license": "MIT"
 }
