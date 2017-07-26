@@ -51,10 +51,12 @@ This will prompt you for the relevant variables, and generate a new component in
 
 In order to create a new story, add a story.js file to a component directory, and then require this file in .storybook/stories.js.
 
-The storybook can be deployed to [Github Pages](https://pittborndigital.github.io/the92club/) by running:
+## GH Pages
+
+The [Github Pages](https://pittborndigital.github.io/the92club/) site hosts both the storybook and the mockups, and can be deployed with the following command:
 
 ```bash
-npm run deploy-storybook
+npm run gh-pages:deploy
 ```
 
 ## License
