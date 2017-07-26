@@ -1,3 +1,4 @@
 .league-icon img {
-  width: 60px;
+  max-width: 200px;
+  max-height: 100px;
 }

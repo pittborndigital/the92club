@@ -1,0 +1,109 @@
+{
+  "leagueName": "Premier League",
+  "leagueIcon": "../../images/league-icons/Premier_League.png",
+  "percentComplete": 70,
+  "achieved": 14,
+  "goal": 20,
+  "teams": [
+    {
+      "teamName": "AFC Bournemouth",
+      "teamBadge": "../../images/team-badges/AFC_Bournemouth.png",
+      "visited": false
+    },
+    {
+      "teamName": "Arsenal",
+      "teamBadge": "../../images/team-badges/Arsenal.png",
+      "visited": false
+    },
+    {
+      "teamName": "Brighton & Hove Albion",
+      "teamBadge": "../../images/team-badges/Brighton_&_Hove_Albion.png",
+      "visited": true
+    },
+    {
+      "teamName": "Burnley",
+      "teamBadge": "../../images/team-badges/Burnley.png",
+      "visited": true
+    },
+    {
+      "teamName": "Chelsea",
+      "teamBadge": "../../images/team-badges/Chelsea.png",
+      "visited": true
+    },
+    {
+      "teamName": "Crystal Palace",
+      "teamBadge": "../../images/team-badges/Crystal_Palace.png",
+      "visited": true
+    },
+    {
+      "teamName": "Everton",
+      "teamBadge": "../../images/team-badges/Everton.png",
+      "visited": true
+    },
+    {
+      "teamName": "Huddersfield Town",
+      "teamBadge": "../../images/team-badges/Huddersfield_Town.png",
+      "visited": false
+    },
+    {
+      "teamName": "Leicester City",
+      "teamBadge": "../../images/team-badges/Leicester_City.png",
+      "visited": true
+    },
+    {
+      "teamName": "Liverpool",
+      "teamBadge": "../../images/team-badges/Liverpool.png",
+      "visited": true
+    },
+    {
+      "teamName": "Manchester City",
+      "teamBadge": "../../images/team-badges/Manchester_City.png",
+      "visited": true
+    },
+    {
+      "teamName": "Manchester United",
+      "teamBadge": "../../images/team-badges/Manchester_United.png",
+      "visited": true
+    },
+    {
+      "teamName": "Newcastle United",
+      "teamBadge": "../../images/team-badges/Newcastle_United.png",
+      "visited": true
+    },
+    {
+      "teamName": "Southampton",
+      "teamBadge": "../../images/team-badges/Southampton.png",
+      "visited": true
+    },
+    {
+      "teamName": "Stoke City",
+      "teamBadge": "../../images/team-badges/Stoke_City.png",
+      "visited": false
+    },
+    {
+      "teamName": "Swansea City",
+      "teamBadge": "../../images/team-badges/Swansea_City.png",
+      "visited": true
+    },
+    {
+      "teamName": "Tottenham Hotspur",
+      "teamBadge": "../../images/team-badges/Tottenham_Hotspur.png",
+      "visited": true
+    },
+    {
+      "teamName": "Watford",
+      "teamBadge": "../../images/team-badges/Watford.png",
+      "visited": true
+    },
+    {
+      "teamName": "West Bromwich Albion",
+      "teamBadge": "../../images/team-badges/West_Bromwich_Albion.png",
+      "visited": false
+    },
+    {
+      "teamName": "West Ham United",
+      "teamBadge": "../../images/team-badges/West_Ham_United.png",
+      "visited": false
+    }
+  ]
+}

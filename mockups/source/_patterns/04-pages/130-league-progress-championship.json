@@ -1,11 +1,6 @@
 {
-  "btnText": "Button",
-  "year": "2017",
-  "company" : {
-    "name": "Pitt Born Digital"
-  },
-  "leagueName": "League Name",
-  "leagueIcon": "../../images/league-icon.png",
+  "leagueName": "Premier League",
+  "leagueIcon": "../../images/league-icons/Championship.png",
   "percentComplete": 58,
   "achieved": 7,
   "goal": 12,

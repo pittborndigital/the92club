@@ -1,0 +1,14 @@
+.league-progress {
+  text-align: center;
+}
+.league-progress__league {
+}
+.league-progress__count {
+  padding: 10px;
+}
+.league-progress__bar {
+  padding: 10px;
+}
+.league-progress__teams {
+  padding: 10px;
+}

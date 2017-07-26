@@ -22,7 +22,8 @@
 }
 
 .league-icon img {
-  width: 60px;
+  max-width: 200px;
+  max-height: 100px;
 }
 
 .progress {
@@ -86,13 +87,6 @@
   text-align: center;
 }
 .league-progress__league {
-}
-.league-progress__league .league-icon img {
-  width: 200px;
-}
-.league-progress__league-name {
-  font-size: 30px;
-  padding: 10px;
 }
 .league-progress__count {
   padding: 10px;
