@@ -73,7 +73,7 @@
     "gh-pages:prepare": "npm run build-storybook && npm run patternlab:build && rm -rf gh-pages/mockups && cp -R mockups/public gh-pages/mockups",
     "gh-pages:deploy": "npm run gh-pages:prepare && gh-pages -d gh-pages",
     "patternlab": "npm run watch & npm run patternlab:serve",
-    "patternlab:build": "rm -rf mockups/public && npm run patternlab:css && patternlab build -v --config ./mockups/patternlab-config.json",
+    "patternlab:build": "rm -rf mockups/public/* && npm run patternlab:css && patternlab build -v --config ./mockups/patternlab-config.json",
     "patternlab:serve": "patternlab serve --config ./mockups/patternlab-config.json",
     "patternlab:css": "node scripts/compileMockupCss.js",
     "watch": "npm-watch"

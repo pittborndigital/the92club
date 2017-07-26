@@ -1,4 +1,15 @@
 .btn
 
-  border 1px solid black
+  cursor pointer
+  padding 8px 12px
   border-radius 5px
+  border 1px solid lightgrey
+  outline none
+
+  &.btn-save
+
+    background $color-success
+
+    &:hover
+
+      background darken($color-success, 15)
