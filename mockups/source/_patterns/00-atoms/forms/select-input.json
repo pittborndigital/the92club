@@ -1,0 +1,13 @@
+{
+  "options": [
+    {
+      "key": "ONE",
+      "label": "One"
+    },
+    {
+      "key": "TWO",
+      "label": "Two"
+    }
+  ],
+  "value": "TWO"
+}

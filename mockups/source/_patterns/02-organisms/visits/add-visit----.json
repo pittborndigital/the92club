@@ -1,0 +1,17 @@
+{
+  "options": [
+    {
+      "key": "MCU",
+      "label": "Manchester United"
+    },
+    {
+      "key": "TH",
+      "label": "Tottenham Hotspur"
+    }
+  ],
+  "value": "MCU",
+  "sub-information": "Old Trafford",
+  "checkbox-checked": true,
+  "checkbox-label": "Attended",
+  "date-input-value": "2017-04-22"
+}
