@@ -1,0 +1,12 @@
+<div class="team-badge-list">
+  {{#teams}}
+  <div class="team-badge-list-container">
+    <div class="team-badge {{#visited}}visited{{/visited}}">
+      {{> atoms-club-badge }}
+    </div>
+    <div class="team-name">
+      {{clubName}}
+    </div>
+  </div>
+  {{/teams}}
+</div>

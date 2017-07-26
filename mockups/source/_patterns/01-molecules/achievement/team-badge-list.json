@@ -1,0 +1,64 @@
+{
+    "teams": [
+    {
+      "clubName": "Club1 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": true
+    },
+    {
+      "clubName": "Club2 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": true
+    },
+    {
+      "clubName": "Club3 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": false
+    },
+    {
+      "clubName": "Club4 WithLongName",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": false
+    },
+    {
+      "clubName": "Club5 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": true
+    },
+    {
+      "clubName": "Club6 WithLongName",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": false
+    },
+    {
+      "clubName": "Club7 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": true
+    },
+    {
+      "clubName": "Club8 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": true
+    },
+    {
+      "clubName": "Club9 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": false
+    },
+    {
+      "clubName": "Club10 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": false
+    },
+    {
+      "clubName": "Club11 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": false
+    },
+    {
+      "clubName": "Club12 Name",
+      "clubBadge": "../../images/club-badge.png",
+      "visited": true
+    }
+  ]
+}
