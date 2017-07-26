@@ -1,45 +1,59 @@
-.team-badge-list-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-.team-badge-list {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.team-badge-list .team-badge {
-  opacity: 0.3;
-  position: relative;
-  width: 80px;
-}
-.team-badge-list .team-name {
-  padding-top: 5px;
-  width: 80px;
-  height: 36px;
-  margin-bottom: 10px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 13px;
-}
-.team-badge-list .team-badge.visited {
-  opacity: 1;
-}
-.team-badge-list .team-badge.visited:after {
-  content: "✔";
-  position: absolute;
-  bottom: -3px;
-  right: 0px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  color: white;
-  background-color: #5a995a;
-  line-height: 22px;
-  font-size: 12px;
-  text-align: center;
-}
+.team-badge-list-container
+  display flex
+  flex-direction column
+  padding-left 10px
+  padding-right 10px
+  text-align center
+
+.team-badge-list
+  max-width 100%
+  display flex
+  align-items center
+  justify-content space-around
+  flex-wrap wrap
+
+.team-badge-list .team-badge
+  position relative
+  width 80px
+
+.team-badge-list .team-name
+  width 80px
+  height 48px
+  margin-bottom 10px
+  text-overflow ellipsis
+  overflow hidden
+  font-size 13px
+  color gray
+  display flex
+  justify-content center
+  align-items center
+
+.team-badge-list .team-badge
+  opacity 0.4
+  filter grayscale(100%)
+
+.team-badge-list .team-badge.visited
+  opacity inherit
+  filter grayscale(0%)
+
+.team-badge-list .team-name
+  opacity 0.6
+  color gray
+
+.team-badge-list .team-name.visited
+  opacity inherit
+  color inherit
+
+.team-badge-list .team-badge.visited:after
+  content "✔"
+  position absolute
+  bottom -3px
+  right 0px
+  width 20px
+  height 20px
+  border-radius 50%
+  color white
+  background-color #5a995a
+  line-height 22px
+  font-size 12px
+  text-align center
