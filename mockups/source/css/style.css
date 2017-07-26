@@ -9,14 +9,14 @@
   color: red;
 }
 
-.club-badge {
+.team-badge-icon {
   width: 80px;
   height: 80px;
   padding: 5px;
   text-align: center;
 }
 
-.club-badge img {
+.team-badge-icon img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -80,4 +80,26 @@
   line-height: 22px;
   font-size: 12px;
   text-align: center;
+}
+
+.league-progress {
+  text-align: center;
+}
+.league-progress__league {
+}
+.league-progress__league .league-icon img {
+  width: 200px;
+}
+.league-progress__league-name {
+  font-size: 30px;
+  padding: 10px;
+}
+.league-progress__count {
+  padding: 10px;
+}
+.league-progress__bar {
+  padding: 10px;
+}
+.league-progress__teams {
+  padding: 10px;
 }

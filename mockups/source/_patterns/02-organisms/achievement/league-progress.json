@@ -1,5 +1,10 @@
 {
-    "teams": [
+  "leagueName": "League Name",
+  "leagueIcon": "../../images/league-icon.png",
+  "percentComplete": 58,
+  "achieved": 7,
+  "goal": 12,
+  "teams": [
     {
       "teamName": "Team1 Name",
       "teamBadge": "../../images/team-badge.png",
@@ -53,7 +58,7 @@
     {
       "teamName": "Team11 Name",
       "teamBadge": "../../images/team-badge.png",
-      "visited": false
+      "visited": true
     },
     {
       "teamName": "Team12 Name",

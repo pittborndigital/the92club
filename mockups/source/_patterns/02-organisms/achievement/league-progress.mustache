@@ -1,8 +1,17 @@
-<div class="league-progress-bar">
-	<div>
-      Premiership
+<div class="league-progress">
+	<div class="league-progress__league">
+		{{> atoms-league-icon }}
+		<div class="league-progress__league-name">
+			{{leagueName}}
+		</div>
 	</div>
-  <div>
-    6 out of 38
-  </div>
+	<div class="league-progress__count">
+		{{achieved}} of {{goal}}
+	</div>
+	<div class="league-progress__bar">
+		{{> atoms-progress-bar }}
+	</div>
+	<div class="league-progress__teams">
+		{{> molecules-team-badge-list }}
+	</div>
 </div>
