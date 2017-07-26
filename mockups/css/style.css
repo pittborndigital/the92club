@@ -1,0 +1,84 @@
+.btn {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.league-icon img {
+  max-width: 200px;
+  max-height: 100px;
+}
+.team-badge-icon {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  text-align: center;
+}
+.team-badge-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.progress {
+  background: #edecec;
+}
+.progress .progress-bar {
+  height: 16px;
+  background: #5a995a;
+  transition: 0.4s linear;
+  transition-property: width;
+}
+.team-badge-list-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.team-badge-list {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.team-badge-list .team-badge {
+  opacity: 0.3;
+  position: relative;
+  width: 80px;
+}
+.team-badge-list .team-name {
+  padding-top: 5px;
+  width: 80px;
+  height: 36px;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 13px;
+}
+.team-badge-list .team-badge.visited {
+  opacity: 1;
+}
+.team-badge-list .team-badge.visited:after {
+  content: "✔";
+  position: absolute;
+  bottom: -3px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5a995a;
+  line-height: 22px;
+  font-size: 12px;
+  text-align: center;
+}
+.league-progress {
+  text-align: center;
+}
+.league-progress__count {
+  padding: 10px;
+}
+.league-progress__bar {
+  padding: 10px;
+}
+.league-progress__teams {
+  padding: 10px;
+}

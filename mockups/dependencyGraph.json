@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "timestamp": 1501066484365,
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": false,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "00-atoms/buttons/button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-navigation-footer-nav/01-molecules-navigation-footer-nav.html",
+          "lineagePattern": "molecules-footer-nav"
+        }
+      },
+      {
+        "v": "00-atoms/buttons/text-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-navigation-footer-nav/01-molecules-navigation-footer-nav.html",
+          "lineagePattern": "molecules-footer-nav"
+        }
+      },
+      {
+        "v": "00-atoms/icons/league-icon.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-achievement-league-progress/02-organisms-achievement-league-progress.html",
+          "lineagePattern": "organisms-league-progress"
+        }
+      },
+      {
+        "v": "00-atoms/icons/team-badge-icon.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-achievement-team-badge-list/01-molecules-achievement-team-badge-list.html",
+          "lineagePattern": "molecules-team-badge-list"
+        }
+      },
+      {
+        "v": "00-atoms/progress/progress-bar.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-achievement-league-progress/02-organisms-achievement-league-progress.html",
+          "lineagePattern": "organisms-league-progress"
+        }
+      },
+      {
+        "v": "01-molecules/achievement/team-badge-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-achievement-league-progress/02-organisms-achievement-league-progress.html",
+          "lineagePattern": "organisms-league-progress"
+        }
+      },
+      {
+        "v": "01-molecules/navigation/footer-nav.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-global-footer/02-organisms-global-footer.html",
+          "lineagePattern": "organisms-footer"
+        }
+      },
+      {
+        "v": "02-organisms/achievement/league-progress.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-league-progress/03-templates-league-progress.html",
+          "lineagePattern": "templates-league-progress"
+        }
+      },
+      {
+        "v": "02-organisms/global/footer.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-homepage/03-templates-homepage.html",
+          "lineagePattern": "templates-homepage"
+        }
+      },
+      {
+        "v": "03-templates/homepage.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+          "lineagePattern": "pages-homepage"
+        }
+      },
+      {
+        "v": "03-templates/league-progress.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-130-league-progress-championship/04-pages-130-league-progress-championship.html",
+          "lineagePattern": "pages-league-progress-championship"
+        }
+      },
+      {
+        "v": "03-templates/progress-by-league.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-100-progress-by-league/04-pages-100-progress-by-league.html",
+          "lineagePattern": "pages-progress-by-league"
+        }
+      },
+      {
+        "v": "04-pages/00-homepage.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/100-progress-by-league.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/120-league-progress-premier-league.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/130-league-progress-championship.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "/Users/cjpitt/development/the92club/mockups/source/_meta/_00-head.mustache",
+        "value": {
+          "compileState": null
+        }
+      },
+      {
+        "v": "/Users/cjpitt/development/the92club/mockups/source/_meta/_01-foot.mustache",
+        "value": {
+          "compileState": null
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "01-molecules/achievement/team-badge-list.mustache",
+        "w": "00-atoms/icons/team-badge-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/navigation/footer-nav.mustache",
+        "w": "00-atoms/buttons/text-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/navigation/footer-nav.mustache",
+        "w": "00-atoms/buttons/button.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/achievement/league-progress.mustache",
+        "w": "00-atoms/icons/league-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/achievement/league-progress.mustache",
+        "w": "00-atoms/progress/progress-bar.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/achievement/league-progress.mustache",
+        "w": "01-molecules/achievement/team-badge-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/global/footer.mustache",
+        "w": "01-molecules/navigation/footer-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/homepage.mustache",
+        "w": "02-organisms/global/footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/league-progress.mustache",
+        "w": "02-organisms/achievement/league-progress.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/00-homepage.mustache",
+        "w": "03-templates/homepage.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/100-progress-by-league.mustache",
+        "w": "03-templates/progress-by-league.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/120-league-progress-premier-league.mustache",
+        "w": "03-templates/league-progress.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/130-league-progress-championship.mustache",
+        "w": "03-templates/league-progress.mustache",
+        "value": {}
+      }
+    ]
+  }
+}
