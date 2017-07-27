@@ -15,7 +15,8 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-#patternlab-body, #patternlab-html {
+#patternlab-body,
+#patternlab-html {
   margin: 0;
   padding: 0;
   background: #ddd;
@@ -50,7 +51,9 @@
   transition: color .1s ease-out;
 }
 
-.sg-header a.active, .sg-header a:focus, .sg-header a:hover {
+.sg-header a.active,
+.sg-header a:focus,
+.sg-header a:hover {
   color: #fff;
   background: #222;
 }
@@ -128,7 +131,8 @@
   }
 }
 
-.sg-acc-handle:focus:after, .sg-acc-handle:hover:after {
+.sg-acc-handle:focus:after,
+.sg-acc-handle:hover:after {
   color: grey;
 }
 
@@ -160,7 +164,8 @@
   background: #222;
 }
 
-.sg-acc-panel li:last-child, .sg-acc-panel li:last-child a {
+.sg-acc-panel li:last-child,
+.sg-acc-panel li:last-child a {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -247,7 +252,8 @@
   background: #222;
 }
 
-.sg-input:active, .sg-input:focus {
+.sg-input:active,
+.sg-input:focus {
   outline: 0;
   background: grey;
   color: #fff;
@@ -423,6 +429,10 @@
   clear: both;
 }
 
+.sg-pattern-example {
+  clear: both;
+}
+
 .sg-pattern-head {
   position: relative;
   padding: .5rem 0 0;
@@ -454,7 +464,8 @@
   font-weight: 700;
 }
 
-.sg-pattern-title a:focus, .sg-pattern-title a:hover {
+.sg-pattern-title a:focus,
+.sg-pattern-title a:hover {
   color: #000 !important;
 }
 
@@ -485,7 +496,9 @@
   display: inline-block;
 }
 
-.sg-pattern-extra-toggle.active, .sg-pattern-extra-toggle:focus, .sg-pattern-extra-toggle:hover {
+.sg-pattern-extra-toggle.active,
+.sg-pattern-extra-toggle:focus,
+.sg-pattern-extra-toggle:hover {
   background: #eee;
   color: #000;
 }
@@ -515,7 +528,8 @@
   color: #222;
 }
 
-.sg-pattern-extra a:focus, .sg-pattern-extra a:hover {
+.sg-pattern-extra a:focus,
+.sg-pattern-extra a:hover {
   color: grey;
 }
 
@@ -707,7 +721,8 @@
   color: #222;
 }
 
-.sg-tab-title-active a:focus, .sg-tab-title-active a:hover {
+.sg-tab-title-active a:focus,
+.sg-tab-title-active a:hover {
   color: #222;
 }
 
@@ -807,7 +822,8 @@
   color: #ccc;
 }
 
-.sg-modal .sg-pattern-extra-info a:focus, .sg-modal .sg-pattern-extra-info a:hover {
+.sg-modal .sg-pattern-extra-info a:focus,
+.sg-modal .sg-pattern-extra-info a:hover {
   color: #eee;
 }
 
@@ -845,7 +861,8 @@
   top: -1.5rem;
 }
 
-.sg-modal-close-btn:focus, .sg-modal-close-btn:hover {
+.sg-modal-close-btn:focus,
+.sg-modal-close-btn:hover {
   background: #222;
   color: #eee;
 }
