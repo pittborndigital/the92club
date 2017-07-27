@@ -2,9 +2,9 @@
 
   <p> Please log in </p>
 
-  {{> atoms-text-input(label: "Username", value: "", placeholder: "Username..")}}
-  {{> atoms-password-input(label: "Password", value: "", placeholder: "Password..")}}
-  {{> atoms-password-input(label: "Confirm Password", value: "", placeholder: "Confirm Password..")}}
+  {{> molecules-form-field("textField": true, "label": "Username", "value": "", "placeholder": "Username..")}}
+  {{> molecules-form-field("passwordField": true, "label": "Password", "value": "", "placeholder": "Password..")}}
+  {{> molecules-form-field("passwordField": true, "label": "Confirm Password", "value": "", "placeholder": "Confirm Password..")}}
 
   <div class="login-form-actions">
     {{> atoms-button("btn-text": "Login", "btn-class": "btn-login")}}
