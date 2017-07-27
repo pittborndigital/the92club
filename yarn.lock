@@ -6783,9 +6783,9 @@ patternlab-node-cli@pattern-lab/patternlab-node-cli:
     patternlab-node "2.9.3"
     sanitize-filename "1.6.1"
 
-patternlab-node@2.9.3, patternlab-node@^2.0.0, "patternlab-node@git@github.com/pittborndigital/patternlab-node.git":
+patternlab-node@2.9.3, patternlab-node@^2.0.0, "patternlab-node@git://github.com/pittborndigital/patternlab-node.git":
   version "2.9.3"
-  resolved "git@github.com/pittborndigital/patternlab-node.git#ca6721c74e03df2c1bba7bce88ec787e9384aad4"
+  resolved "git://github.com/pittborndigital/patternlab-node.git#ca6721c74e03df2c1bba7bce88ec787e9384aad4"
   dependencies:
     chalk "^1.1.3"
     diveSync "^0.3.0"
