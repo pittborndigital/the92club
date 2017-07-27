@@ -1,13 +1,23 @@
 <div class="login-form">
 
-  <p> Please log in </p>
+  <p> SIGN IN </p>
 
-  {{> molecules-form-field("textField": true, "label": "Username", "value": "", "placeholder": "Username..")}}
-  {{> molecules-form-field("passwordField": true, "label": "Password", "value": "", "placeholder": "Password..")}}
-  {{> molecules-form-field("passwordField": true, "label": "Confirm Password", "value": "", "placeholder": "Confirm Password..")}}
+  {{> molecules-form-field("textField": true, "label": "Username", "value": "")}}
+  {{> molecules-form-field("passwordField": true, "label": "Password", "value": "")}}
+  {{> molecules-form-field("passwordField": true, "label": "Confirm Password", "value": "")}}
 
   <div class="login-form-actions">
-    {{> atoms-button("btn-text": "Login", "btn-class": "btn-login")}}
+    
+    <div class="login-form-submit">
+      {{> atoms-button("btn-text": "Login", "btn-class": "btn-login")}}
+    </div>
+
+    <div class="login-form-forgotten-password">
+      <small>
+        {{> atoms-text-button("btn-text": "Forgotten your password?")}}
+      </small>
+    </div>
+
   </div>
 
 </div>
