@@ -1,4 +1,10 @@
 {
+  "textField": false,
+  "passwordField": false,
+  "selectField": true,
+  "label": "Form field",
+  "placeholder": "Placeholder...",
+  "value": "",
   "options": [
     {
       "key": "1",
@@ -13,6 +19,5 @@
       "label": "Option 3"
     }
   ],
-  "value": "2",
-  "sub-information": "Something extra about option 2"
+  "subInformation": "Some sub info"
 }
