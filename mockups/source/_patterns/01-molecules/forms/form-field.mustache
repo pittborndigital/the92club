@@ -1,1 +1,11 @@
-{{> atoms-text-input }}
+<div class="form-field">
+  <label>{{label}}</label>
+  <div class="form-field-input">
+    {{#textField}}
+      {{> atoms-text-input}}
+    {{/textField}}
+    {{#passwordField}}
+      {{> atoms-password-input}}
+    {{/passwordField}}
+  </div>
+</div>

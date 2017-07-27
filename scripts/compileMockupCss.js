@@ -4,22 +4,24 @@ const Finder = require('fs-finder')
 const path = require('path')
 
 // Define input filename and output filename
-const styleInput = path.join(__dirname, '../mockups/source/')
+const styleInputGlobal = path.join(__dirname, '../mockups/source/css')
+const styleInputPatterns = path.join(__dirname, '../mockups/source/_patterns')
 const styleOutputFilename = 'style.css'
 const styleOutput = path.join(__dirname, `../mockups/source/css/${styleOutputFilename}`)
 
-function getStylusFilesAsString(directory) {
+function getStylusFilesAsString(...directories) {
   let styl = ''
-  const paths = Finder.from(directory).find('.styl')
-  paths.forEach((p) => {
-    const file = fs.readFileSync(p)
-    styl += `${file}\n`
+  directories.forEach((directory) => {
+    const paths = Finder.from(directory).find('.styl')
+    paths.forEach((p) => {
+      const file = fs.readFileSync(p)
+      styl += `${file}\n`
+    })
   })
   return styl
 }
 
 function getFile(file) {
-  console.log('file', file)
   const dir = path.dirname(file)
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(path.dirname(dir))
@@ -44,4 +46,4 @@ function buildStyles(input, output) {
 }
 
 // Build stylesheet
-buildStyles(getStylusFilesAsString(styleInput), styleOutput)
+buildStyles(getStylusFilesAsString(styleInputGlobal, styleInputPatterns), styleOutput)

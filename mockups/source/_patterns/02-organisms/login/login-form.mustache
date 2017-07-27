@@ -1,0 +1,13 @@
+<div class="login-form">
+
+  <p> Please log in </p>
+
+  {{> atoms-text-field(label: "Username", value: "", placeholder: "Username..")}}
+  {{> atoms-password-field(label: "Password", value: "", placeholder: "Password..")}}
+  {{> atoms-password-field(label: "Confirm Password", value: "", placeholder: "Confirm Password..")}}
+
+  <div class="login-form-actions">
+    {{> atoms-button("btn-text": "Login", "btn-class": "btn-login")}}
+  </div>
+  
+</div>
