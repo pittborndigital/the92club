@@ -1,17 +1,13 @@
 <div class="add-visit">
 
-  <div class="form-field">
-    {{> molecules-select-with-information("sub-information": "Elland Road", "options": [{ "key": "LU", "label": "Leeds United" }, { "key": "MC", "label": "Manchester City" }, { "key": "BU", "label": "Burnley" }], "value": "LU" ) }}
-  </div>
+  {{> molecules-select-with-information("selectField": true, "label": "Select club", "value": "LU", "sub-information": "Elland Road", "options": [{ "key": "LU", "label": "Leeds United" }, { "key": "MC", "label": "Manchester City" }, { "key": "BU", "label": "Burnley" }] ) }}
 
-  <div class="form-field">
-    {{> atoms-checkbox-input("label": "Attended") }}
-  </div>
+  {{> molecules-form-field("checkboxField": true, "label": "Attended", "checkboxChecked": true )}}
 
-  <div class="form-field">
-    {{> atoms-date-input}}
-  </div>
+  {{> molecules-form-field("dateField": true, "label": "Date Visited", "value": "" )}}
 
-  {{> atoms-button("btnText": "Save")}}
+  <div class="actions">
+    {{> atoms-button("btnText": "Save")}}
+  </div>
 
 </div>

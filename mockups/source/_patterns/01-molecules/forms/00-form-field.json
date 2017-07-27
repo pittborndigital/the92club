@@ -2,6 +2,8 @@
   "textField": true,
   "passwordField": false,
   "selectField": false,
+  "checkboxField": false,
+  "dateField": false,
   "label": "Form field",
   "placeholder": "Placeholder...",
   "value": "",

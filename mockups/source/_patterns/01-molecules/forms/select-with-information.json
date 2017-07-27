@@ -1,10 +1,7 @@
 {
-  "textField": false,
-  "passwordField": false,
   "selectField": true,
-  "label": "Form field",
-  "placeholder": "Placeholder...",
-  "value": "",
+  "label": "Select an option",
+  "value": "1",
   "options": [
     {
       "key": "1",
