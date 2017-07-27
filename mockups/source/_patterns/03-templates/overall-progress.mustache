@@ -1,0 +1,10 @@
+<div class="overall-progress">
+	<button class="{{#overallProgressTabState.allProgress}}active{{/overallProgressTabState.allProgress}}">ALL {{#overallProgressTabState.allProgress}}(active){{/overallProgressTabState.allProgress}}</button>
+	<button class="{{#overallProgressTabState.allLeagueProgress}}active{{/overallProgressTabState.allLeagueProgress}}">By League {{#overallProgressTabState.allLeagueProgress}}(active){{/overallProgressTabState.allLeagueProgress}}</button>
+	{{#overallProgressTabState.allProgress}}
+		{{> organisms-all-progress }}
+	{{/overallProgressTabState.allProgress}}
+	{{#overallProgressTabState.allLeagueProgress}}
+		{{> organisms-all-league-progress }}
+	{{/overallProgressTabState.allLeagueProgress}}
+</div>

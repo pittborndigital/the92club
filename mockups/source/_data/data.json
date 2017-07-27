@@ -1,7 +1,7 @@
 {
   "btnText": "Button",
   "year": "2017",
-  "company" : {
+  "company": {
     "name": "Pitt Born Digital"
   },
   "leagueName": "League Name",
@@ -9,6 +9,10 @@
   "percentComplete": 58,
   "achieved": 7,
   "goal": 12,
+  "overallProgressTabState": {
+    "allProgress": true,
+    "allLeagueProgress": false
+  },
   "teams": [
     {
       "teamName": "Team1 Name",
@@ -69,6 +73,29 @@
       "teamName": "Team12 Name",
       "teamBadge": "../../images/team-badge.png",
       "visited": true
+    }
+  ],
+  "leagues": [
+    {
+      "leagueName": "League One",
+      "leagueIcon": "../../images/league-icon.png",
+      "percentComplete": 34,
+      "achieved": 7,
+      "goal": 12
+    },
+    {
+      "leagueName": "League Two",
+      "leagueIcon": "../../images/league-icon.png",
+      "percentComplete": 68,
+      "achieved": 7,
+      "goal": 12
+    },
+    {
+      "leagueName": "League Three",
+      "leagueIcon": "../../images/league-icon.png",
+      "percentComplete": 32,
+      "achieved": 7,
+      "goal": 12
     }
   ]
 }

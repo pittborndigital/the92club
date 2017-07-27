@@ -1,0 +1,29 @@
+{
+  "overallProgressTabState": {
+    "allProgress": false,
+    "allLeagueProgress": true
+  },
+  "leagues": [
+    {
+      "leagueName": "Premier League",
+      "leagueIcon": "../../images/league-icons/Premier_League.png",
+      "percentComplete": 87,
+      "achieved": 7,
+      "goal": 12
+    },
+    {
+      "leagueName": "Championship",
+      "leagueIcon": "../../images/league-icons/Championship.png",
+      "percentComplete": 68,
+      "achieved": 7,
+      "goal": 12
+    },
+    {
+      "leagueName": "League One",
+      "leagueIcon": "../../images/league-icon.png",
+      "percentComplete": 10,
+      "achieved": 7,
+      "goal": 12
+    }
+  ]
+}
