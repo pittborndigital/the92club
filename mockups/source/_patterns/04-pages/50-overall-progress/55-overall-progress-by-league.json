@@ -1,8 +1,4 @@
 {
-  "overallProgressTabState": {
-    "allProgress": false,
-    "allLeagueProgress": true
-  },
   "leagues": [
     {
       "leagueName": "Premier League",
