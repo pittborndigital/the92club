@@ -7,9 +7,11 @@
   {{> molecules-form-field("passwordField": true, "label": "Confirm Password", "value": "")}}
 
   <div class="login-form-actions">
-    
+
     <div class="login-form-submit">
-      {{> atoms-button("btn-text": "Login", "btn-class": "btn-login")}}
+      <a href={{ link.pages-homepage }}
+        {{> atoms-button("btn-text": "Login", "btn-class": "btn-login")}}
+      </a>
     </div>
 
     <div class="login-form-forgotten-password">
